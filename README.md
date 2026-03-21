@@ -1,16 +1,36 @@
-## Hi there 👋
+## About Me 
 
-<!--
-**Stanley-Chow/Stanley-Chow** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## Hi, I'm Stanley Chow 👋
 
-Here are some ideas to get you started:
+I am a **Mathematics and Computer Science** student at **The University of Hong Kong (HKU)** with a passion for building high-performance, data-driven systems. My work spans from theoretical research in partial differential equations to engineering production-ready AI agents.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🚀 About Me
+- 🎓 **Education**: Pursuing a BSc in Math & CS at HKU.
+- 🎯 **Goal**: Currently seeking an internship in **Data Science** to apply my quantitative skills to real-world challenges.
+
+## 🛠 Technical Stack
+- **Languages**: Python (Proficient), C++ (Proficient), SQL, MATLAB, Prolog.
+- **Data Science & ML**: Scikit-learn, NumPy, Pandas, Matplotlib, Seaborn, PyTorch.
+- **Specialized Tech**: Retrieval-Augmented Generation (RAG), Particle Swarm Optimization (PSO), Inverted Indexing.
+
+## 📂 Featured Projects
+
+### [DocuQuest Agent]
+- *Architected a high-performance **RAG system in C++** for context-aware document querying.*
+- Engineered a custom **Inverted Index** and **Tokenizer** from scratch to rank unstructured text data.
+- Optimized the retrieval pipeline for high system throughput using custom Multimap data structures.
+
+### [Personality Prediction Pipeline]
+- *Engineered an end-to-end ML pipeline to classify introverts vs. extroverts.* 
+- Processed a dataset of ~25,000 behavioral records with **0.965 AUC** using Gradient Boosting.
+- Performed **Feature Selection** to isolate a high-signal 5-feature subset, significantly reducing computational overhead without losing predictive power.
+
+### [Seismic Data Validation Pipeline]
+- *Built during my internship at Wuhan Boeyo Disaster Reduction Technology.*
+- Integrated real-time seismic data from the **China Earthquake Administration (CEA)** for 2,000+ deployed terminals.
+- Developed noise-processing scripts to filter ambient vibrations, preventing false triggers in high-precision safety zones.
+
+## 🏆 Honors
+- **Dean’s List** (HKU, 2025) 
+- **UG Entrance Scholarship** for Outstanding Academic Talents 
+- **AIME Distinction** & **S.-T.Yau High School Science Award**

@@ -37,4 +37,8 @@ I am a **Mathematics and Computer Science** student at **The University of Hong 
 ## 🏆 Honors
 - **Dean’s List** (HKU, 2025) 
 - **UG Entrance Scholarship** for Outstanding Academic Talents 
+- **HKU Class of 1978 Scholarship**
+- **Lee Shau Kee Scholarship**
 - **AIME Distinction** & **S.-T.Yau High School Science Award**
+
+

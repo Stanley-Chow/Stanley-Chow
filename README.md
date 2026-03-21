@@ -30,6 +30,10 @@ I am a **Mathematics and Computer Science** student at **The University of Hong 
 - Integrated real-time seismic data from the **China Earthquake Administration (CEA)** for 2,000+ deployed terminals.
 - Developed noise-processing scripts to filter ambient vibrations, preventing false triggers in high-precision safety zones.
 
+### [Optimization of Track Design Research]
+- Developed a comprehensive mathematical model for urban rail transit route design, utilizing plane line length as the objective function to minimize construction costs while adhering to strict engineering constraints.
+- Implemented a **Particle Swarm Optimization (PSO) algorithm** to solve complex multi-arc segment pathing problems between stations, providing theoretical optimal solutions for track geometry and validating results through simulation.
+
 ## 🏆 Honors
 - **Dean’s List** (HKU, 2025) 
 - **UG Entrance Scholarship** for Outstanding Academic Talents 

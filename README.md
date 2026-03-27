@@ -1,6 +1,6 @@
 ## About Me 
 
-## Hi, I'm Stanley Chow 👋
+## Hi, I'm Stanley Chow
 
 I am a **Mathematics and Computer Science** student at **The University of Hong Kong (HKU)** with a passion for building high-performance, data-driven systems. My work spans from theoretical research in partial differential equations to engineering production-ready AI agents.
 

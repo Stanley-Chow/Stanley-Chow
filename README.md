@@ -13,10 +13,6 @@ I enjoy turning mathematical ideas into reproducible learning and retrieval syst
 - Exploring the trade-offs among model quality, candidate coverage, and inference latency
 - Conducting research on inverse problems and reduced-order learning at HKU
 
-My current view of an algorithm system:
-
-> Data → Candidate Retrieval → Feature Construction → Ranking → Evaluation → Iteration
-
 ## 🚀 Featured Projects
 
 ### Two-Stage Recommendation System

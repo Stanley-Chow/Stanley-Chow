@@ -1,111 +1,115 @@
 # Hi, I'm Stanley Chow 👋
 
-**Aspiring Algorithm Engineer | Recommender Systems · Search & Ranking · Machine Learning**
+**Recommendation & Search Algorithms · Machine Learning · Applied Mathematics**
 
-I am an undergraduate at **The University of Hong Kong**, pursuing a BSc in **Mathematics**, a second major in **Computer Science**, and a minor in **Finance**.
+I am a Mathematics undergraduate at The University of Hong Kong, pursuing a
+second major in Computer Science and a minor in Finance. I build retrieval and
+ranking pipelines, reproducible machine-learning experiments, and numerical
+methods for inverse problems, with a particular interest in recommendation,
+search, and advertising systems.
 
-I enjoy turning mathematical ideas into reproducible learning and retrieval systems. I am currently seeking internship opportunities in **recommendation, search, advertising algorithms, and machine learning engineering**.
+## Current Focus
 
-## 🔍 Current Focus
+- Multi-channel candidate retrieval, learning to rank, negative sampling, and temporal evaluation
+- Applied machine learning with explicit validation, ablation, and reproducibility contracts
+- Numerical methods for inverse problems, reduced-order modeling, and regularization
+- Python and C++ systems that keep modeling logic separate from data, evaluation, and interfaces
 
-- Building an end-to-end **two-stage recommendation system**
-- Studying candidate retrieval, ranking, negative sampling, and recommendation evaluation
-- Exploring the trade-offs among model quality, candidate coverage, and inference latency
-- Conducting research on inverse problems and reduced-order learning at HKU
+## Featured Projects
 
-## 🚀 Featured Projects
+### [H&M Two-Stage Personalized Recommendation System](https://github.com/Stanley-Chow/hm-2stage-recommender)
 
-### Two-Stage Recommendation System
+`Python` · `PyTorch` · `LightGBM` · `DuckDB`
 
-**Python · PyTorch · Retrieval · Ranking**
+An offline retrieval-and-ranking system built on 31.8 million H&M transaction events.
 
-An end-to-end recommendation pipeline inspired by modern recommendation, search, and advertising systems.
+- Combined nine heuristic, collaborative, learned, text, and image retrieval channels in a quota-aware K=500 candidate interface.
+- Trained a LambdaRank model on 100,000 customer-week queries under four rolling temporal cutoffs; an untouched future week reached MAP@12 of **0.03448**, a **3.94%** relative gap from development.
+- Ran bounded-memory inference for **1,371,980 customers** across 138 shards and submitted final predictions scoring **0.03117 public / 0.03116 private MAP@12** on Kaggle.
 
-- Implemented popularity, Item-CF, matrix-factorization, and two-tower retrieval models
-- Built negative-sampling and embedding-based Top-N candidate generation
-- Developed a neural ranker using user, item, metadata, and retrieval-score features
-- Evaluated models with Recall@K, HitRate@K, MAP@K, NDCG@K, coverage, and latency
-- Organized the project into reusable data, model, retrieval, ranking, and evaluation modules
+[Repository →](https://github.com/Stanley-Chow/hm-2stage-recommender)
 
-**Next milestones:** FAISS/ANN retrieval, LightGBM ranking, larger-scale benchmarking, and systematic ablation studies.
+### [DocuQuest Agent](https://github.com/Stanley-Chow/docuquest-agent)
 
-[View repository](https://github.com/Stanley-Chow/REPLACE_WITH_RECSYS_REPO)
+`C++17` · `Information Retrieval` · `CMake` · `LLM APIs`
 
----
+A retrieval-augmented document question-answering system with a deterministic C++ search layer.
 
-### DocuQuest — Retrieval-Augmented Document QA
+- Implemented tokenization, a custom ownership-aware binary-search-tree multimap, and an inverted index.
+- Applied AND constraints within expanded term groups and unions across groups before grounded synthesis.
+- Injected the model client so retrieval tests remain deterministic and credential-free; live generation reads credentials only from environment variables.
 
-**C++ · Information Retrieval · Inverted Index · LLM**
+[Repository →](https://github.com/Stanley-Chow/docuquest-agent)
 
-A document question-answering system combining classical information retrieval with LLM-assisted query expansion.
+### [Behavioral Personality Analytics](https://github.com/Stanley-Chow/behavioral-personality-analytics)
 
-- Built tokenization and inverted-index components in C++
-- Converted natural-language questions into document-oriented search terms
-- Retrieved relevant context before answer generation
-- Reduced repeated document scanning through indexed retrieval
+`Python` · `scikit-learn` · `pandas` · `Matplotlib`
 
-[View repository](https://github.com/Stanley-Chow/REPLACE_WITH_DOCUQUEST_REPO)
+A leakage-resistant study of personality, stage-fright, and behavioral-outcome prediction.
 
----
+- Kept preprocessing and model selection inside development pipelines before one-time evaluation on an untouched 20% holdout.
+- Evaluated **381** model-and-feature-subset configurations with a predeclared parsimony rule.
+- Selected a three-feature Gradient Boosting model with **0.9651 holdout ROC-AUC**, retaining a compact behavioral feature set.
 
-### Covariance-Designed POD for Inverse Problems
+[Repository →](https://github.com/Stanley-Chow/behavioral-personality-analytics)
 
-**Python · Numerical Methods · Optimization · Scientific Computing**
+### [Flight Price Prediction & Pricing Dynamics](https://github.com/Stanley-Chow/flight-price-prediction-and-pricing-analysis)
 
-My current research project as an **HKU Summer Research Fellow**.
+`Python` · `XGBoost` · `scikit-learn` · `pandas`
 
-- Developed finite-difference simulations for parabolic inverse-source problems
-- Implemented POD-based reduced-order reconstruction and Tikhonov regularization
-- Designed Monte Carlo experiments for noise and sensor robustness
-- Reduced full-order reconstruction to a 20–40 dimensional solution space
-- Connected numerical results with spectral regularization and heat-kernel smoothing
+A collaborative regression study comparing tree ensembles, regularized models, and principal-component regression on airfare data.
 
-[View repository](https://github.com/Stanley-Chow/REPLACE_WITH_RESEARCH_REPO)
+- The final XGBoost model reached **RMSE ₹2,319.47** and **R² 0.9896** on a 60,031-row held-out same-period test set.
+- Examined model-estimated booking-time effects with partial dependence while keeping predictive associations distinct from causal claims.
+- My recorded contributions cover code for Experiments 1 and 2 and the interpretation and discussion for Experiment 2.
 
-## 🧰 Technical Toolkit
+[Repository →](https://github.com/Stanley-Chow/flight-price-prediction-and-pricing-analysis)
 
-**Programming**
+## Research
 
-`Python` · `C++` · `SQL` · `MATLAB`
+### Covariance-Designed POD for Parabolic Inverse Source Problems
 
-**Machine Learning and Data**
+As an HKU Summer Research Fellow, I study reduced-order reconstruction of
+source geometry from noisy final-time diffusion observations.
 
-`PyTorch` · `scikit-learn` · `LightGBM` · `pandas` · `NumPy` · `SciPy`
+- Implemented 100 × 100 finite-difference simulations, Tikhonov regularization, and Monte Carlo noise and sensor experiments.
+- Constructed covariance-designed Proper Orthogonal Decomposition bases and reduced reconstruction to a 20–40 dimensional solution space.
+- Audited five numerical experiments against theoretical claims while preparing a manuscript-style research write-up.
 
-**Algorithm Interests**
+I have also modeled urban rail route design under geometric and construction
+constraints, combining analytical linear-programming cases with Particle Swarm
+Optimization for multi-intersection layouts. This work was recognized in the
+S.-T. Yau High School Science Award.
 
-`Recommender Systems` · `Information Retrieval` · `Learning to Rank`  
-`Representation Learning` · `Negative Sampling` · `Offline Evaluation`
+## Technical Toolkit
 
-**Engineering and Research**
+**Languages**
 
-`Git` · `Jupyter` · `LaTeX` · `Numerical Optimization` · `Experiment Design`
+Python · C++ · SQL · MATLAB
 
-## 📌 Experience Highlights
+**Machine Learning & Data**
 
-- **HKU Summer Research Fellow:** reduced-order learning and numerical methods for inverse problems
-- **Data Engineer Intern:** built validation pipelines for 2,000+ earthquake-warning terminals and helped reduce false alerts by approximately 15%
-- **WorldQuant IQC:** developed and tested 40+ quantitative factors; Stage 1 Gold Medal and Stage 2 Top 10
-- **Academic performance:** GPA 3.98/4.30, Dean’s List, and multiple university scholarships
+PyTorch · LightGBM · XGBoost · scikit-learn · pandas · NumPy · SciPy · DuckDB
 
-## 🌱 What I Am Learning Next
+**Recommendation & Search**
 
-- Approximate nearest-neighbor retrieval with FAISS
-- Learning-to-rank models and ranking-feature design
-- Sequential and multi-interest recommendation
-- CTR/CVR prediction and multi-task learning
-- Position bias, selection bias, and counterfactual evaluation
-- Online experimentation and A/B testing fundamentals
-- Efficient model serving and latency-aware system design
+Candidate Retrieval · Collaborative Filtering · Two-Tower Models · LightGCN · LambdaRank · Negative Sampling · Temporal Validation · MAP/NDCG/Recall
 
-## 📫 Contact
+**Engineering & Research**
 
-I am open to internship and research opportunities involving:
+Git · CMake · pytest · Jupyter · LaTeX · Numerical Optimization · Experiment Design
 
-- Recommendation and personalization
-- Search, retrieval, and ranking
-- Advertising and prediction algorithms
-- Applied machine learning engineering
+## Selected Highlights
 
-**Email:** [pingsenchow@outlook.com](mailto:pingsenchow@outlook.com)  
-**GitHub:** [github.com/Stanley-Chow](https://github.com/Stanley-Chow)
+- HKU Summer Research Fellow in numerical inverse problems and reduced-order modeling
+- GPA **3.98/4.30**; Dean's List, HKU Undergraduate Entrance Scholarship, and Lee Shau Kee Scholarship
+- Mathematics coursework in probability, stochastic processes, optimization, numerical analysis, and scientific computing
+
+## Contact
+
+- Email: [pingsenchow@outlook.com](mailto:pingsenchow@outlook.com)
+- GitHub: [github.com/Stanley-Chow](https://github.com/Stanley-Chow)
+
+I am open to internship and research opportunities in recommendation, search,
+ranking, advertising algorithms, machine learning engineering, and applied data
+science.

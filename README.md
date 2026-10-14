@@ -3,19 +3,31 @@
 **Recommendation & Search Algorithms · Machine Learning · Applied Mathematics**
 
 I am a Mathematics undergraduate at The University of Hong Kong, pursuing a
-second major in Computer Science and a minor in Finance. I build retrieval and
-ranking pipelines, reproducible machine-learning experiments, and numerical
-methods for inverse problems, with a particular interest in recommendation,
-search, and advertising systems.
+second major in Computer Science and a minor in Finance. I build generative and
+two-stage recommenders, C++ retrieval systems, and numerical methods for inverse
+problems. My interests span recommendation, search, ranking, and advertising
+algorithms, backed by reproducible experiments in Python and PyTorch.
 
 ## Current Focus
 
+- Semantic IDs, residual quantization, Transformer sequence modeling, and constrained generative retrieval
 - Multi-channel candidate retrieval, learning to rank, negative sampling, and temporal evaluation
-- Applied machine learning with explicit validation, ablation, and reproducibility contracts
+- Reproducible ML experiments with ablations, baseline comparisons, and multiple pipeline seeds
 - Numerical methods for inverse problems, reduced-order modeling, and regularization
-- Python and C++ systems that keep modeling logic separate from data, evaluation, and interfaces
 
 ## Featured Projects
+
+### [TIGER-Style Generative Recommendation](https://github.com/Stanley-Chow/tiger-recommendation)
+
+`Python` · `PyTorch` · `Transformers` · `Residual Quantization` · `MiniLM`
+
+A generative recommender that predicts semantic product IDs from item histories, with controlled experiments on Amazon Beauty.
+
+- Built a residual-quantization tokenizer over frozen metadata embeddings, an encoder–decoder Transformer, and trie-constrained beam search over valid catalog codes.
+- Evaluated three seeds under global time cutoffs on a **50,000-user** Amazon Reviews 2023 cohort: **6.853% mean Recall@100**, versus **7.993% for SASRec**, on **2,252 eligible warm test users**. Reported ranking and new-item limitations alongside the results.
+- Exported a portable CPU inference bundle with CLI/HTTP interfaces, five retrieval/fusion strategies, and full-history seen-item exclusion; audited checkpoint hashes, temporal contexts, and saved rankings.
+
+[Repository →](https://github.com/Stanley-Chow/tiger-recommendation) · [Latest results →](https://github.com/Stanley-Chow/tiger-recommendation/blob/main/docs/m5_results.md)
 
 ### [H&M Two-Stage Personalized Recommendation System](https://github.com/Stanley-Chow/hm-2stage-recommender)
 
@@ -45,7 +57,7 @@ A retrieval-augmented document question-answering system with a deterministic C+
 
 `Python` · `scikit-learn` · `pandas` · `Matplotlib`
 
-A leakage-resistant study of personality, stage-fright, and behavioral-outcome prediction.
+A study of personality, stage-fright, and behavioral-outcome prediction on generated data, with separate model-selection and holdout partitions.
 
 - Kept preprocessing and model selection inside development pipelines before one-time evaluation on an untouched 20% holdout.
 - Evaluated **381** model-and-feature-subset configurations with a predeclared parsimony rule.
@@ -76,6 +88,8 @@ source geometry from noisy final-time diffusion observations.
 - Constructed covariance-designed Proper Orthogonal Decomposition bases and reduced reconstruction to a 20–40 dimensional solution space.
 - Audited five numerical experiments against theoretical claims while preparing a manuscript-style research write-up.
 
+[Research overview & demo →](https://stanley-chow.github.io/research/parabolic-inverse-source/)
+
 I have also modeled urban rail route design under geometric and construction
 constraints, combining analytical linear-programming cases with Particle Swarm
 Optimization for multi-intersection layouts. This work was recognized in the
@@ -93,7 +107,7 @@ PyTorch · LightGBM · XGBoost · scikit-learn · pandas · NumPy · SciPy · Du
 
 **Recommendation & Search**
 
-Candidate Retrieval · Collaborative Filtering · Two-Tower Models · LightGCN · LambdaRank · Negative Sampling · Temporal Validation · MAP/NDCG/Recall
+Generative Retrieval · Semantic IDs · Residual Quantization · SASRec · Candidate Retrieval · Collaborative Filtering · Two-Tower Models · LightGCN · LambdaRank · Negative Sampling · Temporal Validation · MAP/NDCG/Recall
 
 **Engineering & Research**
 
@@ -109,6 +123,7 @@ Git · CMake · pytest · Jupyter · LaTeX · Numerical Optimization · Experime
 
 - Email: [pingsenchow@outlook.com](mailto:pingsenchow@outlook.com)
 - GitHub: [github.com/Stanley-Chow](https://github.com/Stanley-Chow)
+- Portfolio: [stanley-chow.github.io](https://stanley-chow.github.io/)
 
 I am open to internship and research opportunities in recommendation, search,
 ranking, advertising algorithms, machine learning engineering, and applied data

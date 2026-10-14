@@ -1,12 +1,13 @@
 # Hi, I'm Stanley Chow 👋
 
-**Recommendation & Search Algorithms · Machine Learning · Applied Mathematics**
+**Applied Mathematics · Machine Learning · Recommendation Systems**
 
 I am a Mathematics undergraduate at The University of Hong Kong, pursuing a
-second major in Computer Science and a minor in Finance. I build generative and
-two-stage recommenders, C++ retrieval systems, and numerical methods for inverse
-problems. My interests span recommendation, search, ranking, and advertising
-algorithms, backed by reproducible experiments in Python and PyTorch.
+second major in Computer Science and a minor in Finance. I build recommendation
+and retrieval systems, develop numerical methods for inverse problems, and
+evaluate models through reproducible experiments. I am currently seeking
+internships in **quantitative finance, recommendation systems, data science,
+or machine learning engineering**.
 
 ## Current Focus
 
@@ -130,6 +131,4 @@ Git · CMake · pytest · Jupyter · LaTeX · Numerical Optimization · Experime
 - GitHub: [github.com/Stanley-Chow](https://github.com/Stanley-Chow)
 - Portfolio: [stanley-chow.github.io](https://stanley-chow.github.io/)
 
-I am open to internship and research opportunities in recommendation, search,
-ranking, advertising algorithms, machine learning engineering, and applied data
-science.
+For internship opportunities or research collaborations, please get in touch.

@@ -17,11 +17,11 @@ algorithms, backed by reproducible experiments in Python and PyTorch.
 
 ## Featured Projects
 
-### [TIGER-Style Generative Recommendation](https://github.com/Stanley-Chow/tiger-recommendation)
+### [Amazon Beauty: TIGER Generative Recommendation](https://github.com/Stanley-Chow/tiger-recommendation)
 
 `Python` · `PyTorch` · `Transformers` · `Residual Quantization` · `MiniLM`
 
-A generative recommender that predicts semantic product IDs from item histories, with controlled experiments on Amazon Beauty.
+A TIGER-style generative recommender that predicts semantic product IDs from item histories, with controlled experiments on Amazon Beauty.
 
 - Built a residual-quantization tokenizer over frozen metadata embeddings, an encoder–decoder Transformer, and trie-constrained beam search over valid catalog codes.
 - Evaluated three seeds under global time cutoffs on a **50,000-user** Amazon Reviews 2023 cohort: **6.853% mean Recall@100**, versus **7.993% for SASRec**, on **2,252 eligible warm test users**. Reported ranking and new-item limitations alongside the results.
@@ -79,21 +79,26 @@ A collaborative regression study comparing tree ensembles, regularized models, a
 
 ## Research
 
-### Covariance-Designed POD for Parabolic Inverse Source Problems
+### Recovering a Hidden Heat Source
 
-As an HKU Summer Research Fellow, I study reduced-order reconstruction of
-source geometry from noisy final-time diffusion observations.
+HKU Summer Research Fellowship · 2026
 
-- Implemented 100 × 100 finite-difference simulations, Tikhonov regularization, and Monte Carlo noise and sensor experiments.
-- Constructed covariance-designed Proper Orthogonal Decomposition bases and reduced reconstruction to a 20–40 dimensional solution space.
-- Audited five numerical experiments against theoretical claims while preparing a manuscript-style research write-up.
+Heat spreads over time, blurring the shape of its source. My research asks how
+we can work backwards from noisy temperature measurements to recover the
+source's location and shape.
+
+- Built numerical models of heat diffusion and compared full-sized solvers with reduced models using proper orthogonal decomposition (POD).
+- Studied how training examples affect the shapes a compact model can recover, comparing reconstruction accuracy and computation time.
+- Created a visual demonstration of three models recovering the same letter-shaped source from noisy measurements.
 
 [Research overview & demo →](https://stanley-chow.github.io/research/parabolic-inverse-source/)
 
-I have also modeled urban rail route design under geometric and construction
-constraints, combining analytical linear-programming cases with Particle Swarm
-Optimization for multi-intersection layouts. This work was recognized in the
-S.-T. Yau High School Science Award.
+### Urban Rail Network Optimization
+
+I studied how geometry, engineering constraints, and construction cost affect
+the rail routes we can build. I combined analytical optimization with Particle
+Swarm Optimization to search for feasible designs. This work was recognized in
+the S.-T. Yau High School Science Award.
 
 ## Technical Toolkit
 
